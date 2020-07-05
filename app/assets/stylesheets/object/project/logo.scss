@@ -1,0 +1,29 @@
+@import "./foundation/vars";
+
+// --------------------------------
+// # Logo
+// --------------------------------
+
+.p-logo {
+}
+.p-logo__target,
+.p-logo__image {
+  width: 78px;
+  height: 29px;
+  @media (min-width: $breakpoint-lg) {
+    width: 130px;
+    height: 49px;
+  }
+}
+.p-logo__target {
+  display: block;
+  .is-invert & {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(asset_path("v2/logo-w.svg"));
+    .p-logo__image {
+      display: none;
+    }
+  }
+}

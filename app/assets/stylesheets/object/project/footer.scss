@@ -1,0 +1,12 @@
+@import "./foundation/vars";
+// --------------------------------
+// # Footer
+// --------------------------------
+
+.p-footer {
+  padding: $spacing3x $spacing2x;
+  background-color: $color-background-accent;
+  @media (min-width: $breakpoint-lg) {
+    padding: $spacing4x 0;
+  }
+}

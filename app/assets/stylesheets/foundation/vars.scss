@@ -1,0 +1,65 @@
+// ================
+// Variables
+// ================
+
+$breakpoint-xs: 320px;
+$breakpoint-sm: 375px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+$color-primary: #111111;
+$color-secondary: #666666;
+$color-secondary02: #ddd;
+$color-placeholder: #999999;
+$color-accent: #fed14b;
+$color-accent-loud: #c84c09;
+$color-link: #6b5105;
+$color-ad-link: #006699;
+$color-base01: #f9f9f9;
+$color-base02: #f6f6f6;
+$color-alert: #fe4b78;
+
+$color-background: #ffffff;
+$color-background-accent: #f5f3ee;
+$color-border: #cccccc;
+
+$color-text: $color-primary;
+$color-text-sub: $color-secondary;
+$color-text-strong: $color-accent-loud;
+
+$color-share-facebook: #3b5998;
+$color-share-twitter: #55acee;
+$color-share-google: #dd4b39;
+$color-share-hatena: #0083d1;
+$color-share-pocket: #ee4257;
+$color-share-line: #1dcd00;
+
+$type: "Noto Sans", sans-serif;
+$type-ja: "Noto Sans Japanese", sans-serif;
+
+$line-height-sm: 1.414;
+$line-height-md: 1.618;
+
+$spacing1x: 8px;
+$spacing2x: $spacing1x * 2;
+$spacing3x: $spacing1x * 3;
+$spacing4x: $spacing1x * 4;
+$spacing6x: $spacing1x * 6;
+$spacing8x: $spacing1x * 8;
+$spacing12x: $spacing1x * 12;
+
+$height-header: 64px;
+$height-header-lg: 102px;
+//$height-listItem: 48px;
+$height-button: 48px;
+$height-button-sm: 32px;
+
+$radius-sm: 2px;
+$radius-md: 4px;
+$radius: $radius-md;
+
+$breakpoint-xs: 320px !default;
+$breakpoint-sm: 566px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+$breakpoint-xl: 1280px !default;

@@ -1,0 +1,46 @@
+@import "./foundation/vars";
+
+// --------------------------------
+// # Header
+// --------------------------------
+
+.p-header {
+  box-sizing: border-box;
+
+  border-bottom: 1px solid $color-border;
+  padding-left: $spacing2x;
+  padding-right: $spacing2x;
+  height: $height-header;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-background;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  &.is-invert {
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: white;
+  }
+  @media (min-width: $breakpoint-lg) {
+    position: static;
+    padding-left: $spacing4x;
+    padding-right: $spacing4x;
+    height: $height-header-lg;
+    &.has-hero {
+      position: absolute;
+    }
+  }
+}
+.p-header__text {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0 8px;
+  font-weight: nomal;
+}

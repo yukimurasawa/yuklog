@@ -1,0 +1,24 @@
+@import "./foundation/vars";
+
+// --------------------------------
+// # Content
+// メインコンテンツエリア
+// --------------------------------
+
+.p-content {
+  padding-top: $height-header;
+  margin-bottom: $spacing4x;
+  @media (min-width: $breakpoint-md) {
+    //padding-top: 0;
+    &.has-hero {
+      padding-top: $height-header;
+    }
+  }
+  @media (min-width: $breakpoint-lg) {
+    //padding-top: $height-header-lg;
+    padding-top: 0;
+    &.has-hero {
+      padding-top: 0;
+    }
+  }
+}
