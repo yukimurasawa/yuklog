@@ -4,8 +4,9 @@
 // --------------------------------
 
 .p-footer {
+  color: #ffffff;
   padding: $spacing3x $spacing2x;
-  background-color: $color-background-accent;
+  background-color: $color-main;
   @media (min-width: $breakpoint-lg) {
     padding: $spacing4x 0;
   }

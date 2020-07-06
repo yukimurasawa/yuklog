@@ -1,0 +1,46 @@
+@import "./foundation/vars";
+
+// ================
+// # Sub Section
+// サイドバーのセクション
+// ================
+
+.c-subSection {
+  padding: $spacing2x;
+  @media (min-width: $breakpoint-lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.c-subSection__title {
+  padding: 0.75em 0.8em;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: $spacing2x;
+  background: $color-main;
+  line-height: 1.2;
+  font-size: 22px;
+  font-weight: normal;
+  @media (min-width: $breakpoint-lg) {
+    font-size: 18px;
+  }
+}
+.c-subSection__subtitle {
+  margin-bottom: $spacing2x;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: bold;
+}
+.c-subSection__body {
+  p {
+    margin-bottom: $spacing2x;
+  }
+}
+.c-subSection__more {
+  margin-top: $spacing3x;
+}
+.c-profile__image {
+  position: relative;
+  display: block;
+  width: 100%;
+}

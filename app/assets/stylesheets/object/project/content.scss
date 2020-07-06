@@ -22,3 +22,32 @@
     }
   }
 }
+.p-content__header {
+}
+.p-content__body {
+  @media (min-width: $breakpoint-lg) {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $spacing2x $spacing4x;
+    max-width: 1200px;
+    &.-column1 {
+      justify-content: center;
+    }
+  }
+}
+.p-content__main {
+  @media (min-width: $breakpoint-lg) {
+    margin-right: $spacing4x;
+    flex: 1 1 auto;
+    max-width: 804px;
+  }
+}
+.p-content__sub {
+  @media (min-width: $breakpoint-lg) {
+    flex: 0 0 300px;
+    max-width: 300px;
+  }
+}
