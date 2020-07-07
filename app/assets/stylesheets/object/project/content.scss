@@ -23,6 +23,14 @@
   }
 }
 .p-content__header {
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  background-image: url('hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .p-content__body {
   @media (min-width: $breakpoint-lg) {
