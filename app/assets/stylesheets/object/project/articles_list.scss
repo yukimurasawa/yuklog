@@ -1,0 +1,23 @@
+@import "./foundation/vars";
+
+// --------------------------------
+// # Article
+// 記事一覧に関するスタイリング
+// --------------------------------
+
+.p-article__body {
+  position: relative;
+  border-radius: 0 0 4px 4px;
+  border: solid 1px #e2e5e8;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 0 0 32px 0;
+  padding: 2%;
+}
+.p-article__date {
+  color: #999;
+}
+.p-article__title {
+  font-weight: bold;
+  padding: 0 0 8px 0;
+}

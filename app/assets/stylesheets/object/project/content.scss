@@ -9,17 +9,10 @@
   padding-top: $height-header;
   margin-bottom: $spacing4x;
   @media (min-width: $breakpoint-md) {
-    //padding-top: 0;
-    &.has-hero {
-      padding-top: $height-header;
-    }
+    padding-top: $height-header;
   }
   @media (min-width: $breakpoint-lg) {
-    //padding-top: $height-header-lg;
-    padding-top: 0;
-    &.has-hero {
-      padding-top: 0;
-    }
+    padding-top: $height-header-lg;
   }
 }
 .p-content__header {
@@ -31,6 +24,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.p-content__title {
+  margin-bottom: 16px;
+  border-bottom: solid 1px #e2e5e8;
+  span {
+    display: inline-block;
+    padding: 0 8px 8px 0;
+    font-weight: bold;
+  }
 }
 .p-content__body {
   @media (min-width: $breakpoint-lg) {
