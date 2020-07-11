@@ -1,0 +1,19 @@
+<div>
+  <h1>管理者ログイン</h1>
+  <%= form_for(:session, url: login_path) do |f| %>
+   <p class="u-mbm">
+      <%= f.label :email %>
+    </p>
+    <p class="u-mbg">
+      <%= f.email_field :email %>
+    </p>
+    <p class="u-mbm">
+      <%= f.label :password %>
+    </p>
+    <p class="u-mbg">
+      <%= f.password_field :password %>
+    </p>
+      <%= f.submit "ログインする" %>
+    </p>
+  <% end %>
+</div>
