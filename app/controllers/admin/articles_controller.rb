@@ -5,10 +5,11 @@ class Admin::ArticlesController < ApplicationController
   def index; end
 
   private
-    def load_resource
-      case params[:action].to_sym
-      when :index
-        @articles = Article.order(created_at: "DESC")
-      end
+
+  def load_resource
+    case params[:action].to_sym
+    when :index
+      @articles = Article.order(created_at: 'DESC')
     end
+  end
 end

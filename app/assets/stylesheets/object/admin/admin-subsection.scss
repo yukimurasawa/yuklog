@@ -1,0 +1,27 @@
+@import "./foundation/vars";
+
+// ================
+// # Sub Section
+// Admin画面のサイドバーのセクション
+// ================
+
+.admin-subSection {
+  padding: $spacing2x;
+  @media (min-width: $breakpoint-lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.admin-subSection__head {
+  padding: 0.75em 0.8em;
+  color: #2626f2;
+  border-radius: 4px;
+  margin-bottom: $spacing2x;
+  background: #54e3ea;
+  line-height: 1.2;
+  font-size: 22px;
+  font-weight: normal;
+  @media (min-width: $breakpoint-lg) {
+    font-size: 18px;
+  }
+}
