@@ -12,4 +12,8 @@ class Admin::ArticlesController < ApplicationController
       @articles = Article.order(created_at: 'DESC')
     end
   end
+
+  def article_params
+    params.require(:article).permit(:title, :content)
+  end
 end

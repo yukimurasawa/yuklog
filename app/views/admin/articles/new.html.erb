@@ -1,0 +1,30 @@
+<%= render partial: 'application/header' %>
+
+<main class="p-content">
+  
+  <div class="p-content__body">
+    <div class="p-content__main">
+      <div class="p-content__title">
+        <h2>
+          <span>記事を作成する</span>
+        </h2>
+      </div>
+      <%= form_for(:article, url: admin_articles_path) do |f| %>
+        <p class="u-mbm">
+          <%= f.label :title %>
+        </p>
+        <p class="u-mbg">
+          <%= f.text_field :title %>
+        </p>
+        <div class="field">
+          <%= f.rich_text_area :content %>
+        </div>
+        <%= f.submit "作成する" %>
+    </p>
+  <% end %>
+    </div>
+    <div class="p-content__sub">
+      <%= render partial: 'shared/admin_sidebar' %>
+    </div>
+  </div>
+</main>

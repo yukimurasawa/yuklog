@@ -20,7 +20,7 @@
                   <%= article.title %>
                 </h4>
                 <div class="p-article__description">
-                  <p><%= article.content.truncate(80) %></p>
+                  <p><%= article.content.body&.truncate(80) %></p>
                 </div>
               <%- end -%> 
             </div>
