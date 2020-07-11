@@ -2,17 +2,23 @@
   margin-bottom: 12px;
 }
 .text-input__title {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   height: 24px;
   input {
     width: 80%;
     height:100%
   }
 }
+.text-input__description {
+  margin-bottom: 24px;
+  textarea {
+    width: 100%;
+  }
+}
 .text-input__content {
   margin-bottom: 36px;
   trix-editor {
     background-color: #fff;
-    height: 680px;
+    height: 600px;
   }
 }
