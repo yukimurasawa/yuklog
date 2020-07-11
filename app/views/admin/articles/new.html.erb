@@ -10,13 +10,16 @@
         </h2>
       </div>
       <%= form_for(:article, url: admin_articles_path) do |f| %>
-        <p class="u-mbm">
+        <p class="text-form__title">
           <%= f.label :title %>
         </p>
-        <p class="u-mbg">
+        <p class="text-input__title">
           <%= f.text_field :title %>
         </p>
-        <div class="field">
+        <p class="text-form__title">
+          <%= f.label :content %>
+        </p>
+        <div class="text-input__content">
           <%= f.rich_text_area :content %>
         </div>
         <%= f.submit "作成する" %>

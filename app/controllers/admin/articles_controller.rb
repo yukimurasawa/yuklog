@@ -4,6 +4,11 @@ class Admin::ArticlesController < ApplicationController
 
   def index; end
 
+  def create
+    @article = Article.create(article_params)
+    redirect_to admin_article_path(@article)
+  end
+
   private
 
   def load_resource
