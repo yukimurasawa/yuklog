@@ -22,6 +22,7 @@
                 <div class="p-article__description">
                   <p><%= article.description %></p>
                 </div>
+                <%= link_to("削除する", admin_article_path(article), method: :delete, data: { confirm: "本当に削除しますか？" }) %>
               <%- end -%> 
             </div>
           <%- end -%>
