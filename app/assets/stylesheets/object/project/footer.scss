@@ -7,6 +7,10 @@
   color: #ffffff;
   padding: $spacing3x $spacing2x;
   background-color: $color-main;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
   @media (min-width: $breakpoint-lg) {
     padding: $spacing4x 0;
   }
