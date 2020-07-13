@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :articles, only: [:index, :show, :new, :edit, :create, :destroy]
   end
+  resources :group_sets, only: [:show] 
 end
