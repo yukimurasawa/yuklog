@@ -4,6 +4,8 @@ class Admin::ArticlesController < ApplicationController
 
   def index; end
 
+  def show; end
+
   def create
     @article = Article.create(article_params)
     redirect_to admin_article_path(@article)
@@ -24,6 +26,8 @@ class Admin::ArticlesController < ApplicationController
     when :index
       @articles = Article.order(created_at: 'DESC')
     when :destroy
+      @article = Article.find(params[:id])
+    when :show
       @article = Article.find(params[:id])
     end
   end
