@@ -6,9 +6,22 @@ class Admin::ArticlesController < ApplicationController
 
   def show; end
 
+  def edit; end
+
   def create
     @article = Article.create(article_params)
     redirect_to admin_article_path(@article)
+  end
+
+  def update
+    @article = Article.find(params[:id])
+    if @article.update_attributes(article_params)
+      flash[:notice] = "更新しました"
+      redirect_to @article
+    else
+      flash.now[:notice] = "編集に失敗しました"
+      render :edit
+    end
   end
 
   def destroy
@@ -28,6 +41,8 @@ class Admin::ArticlesController < ApplicationController
     when :destroy
       @article = Article.find(params[:id])
     when :show
+      @article = Article.find(params[:id])
+    when :edit
       @article = Article.find(params[:id])
     end
   end

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   namespace :admin do
-    resources :articles, only: [:index, :show, :new, :edit, :create, :destroy]
+    resources :articles
   end
   resources :articles, only: [:show] 
 end
