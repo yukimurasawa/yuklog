@@ -12,7 +12,7 @@
        <%- if @articles.present? -%>
           <%- @articles.each do |article| -%>
             <div class="p-article__body">
-              <%= link_to(admin_article_path(article)) do%>
+              <%= link_to(article_path(article)) do%>
                 <h4 class="p-article__date">
                   <%= article.created_at.to_s(:datetime_jp) %>
                 </h4>
